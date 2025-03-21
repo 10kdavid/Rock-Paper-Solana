@@ -1,0 +1,1 @@
+// This file is no longer needed with Next.js. We're using pages/_app.tsx instead. 

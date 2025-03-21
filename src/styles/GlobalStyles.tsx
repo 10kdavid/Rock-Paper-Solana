@@ -1,0 +1,77 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  :root {
+    --primary-bg: #0f1923;
+    --secondary-bg: #1a2730;
+    --card-bg: #1e2c36;
+    --button-primary: #00a76f;
+    --button-hover: #00c382;
+    --text-primary: #ffffff;
+    --text-secondary: #7f8fa3;
+    --accent-blue: #4275dc;
+    --accent-red: #ff4d4d;
+    --accent-green: #00c382;
+    --border-color: #2a3744;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+  }
+
+  button.primary {
+    background-color: var(--button-primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+
+  button.primary:hover {
+    background-color: var(--button-hover);
+  }
+
+  input {
+    font-family: inherit;
+    outline: none;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+`;
+
+export default GlobalStyles; 
